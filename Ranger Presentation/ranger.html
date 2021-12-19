@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Ranger Presentation/styles.css">
+  <script src="https://kit.fontawesome.com/0773c5b0ba.js" crossorigin="anonymous"></script>
+  <title>Ranger!</title>
+</head>
+<body>
+  <!-- page 1 (Intro) -->
+  <section id="page-1" class="page">
+    <h1>Meet Ranger!</h1>
+    <p>Ranger is our dog, and he is a good dog.</p>
+    <div>
+      <a href="#page-2" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- page 2 -->
+  <section id="page-2" class="page">
+    <h1>Ranger Loves Sweaters</h1>
+    <p>He's always cold, so he loves wearing sweaters. He also wears pajama's to bed! His favorite time is bedtime when he get's to put his pajama's on.</p>
+    <div>
+      <a href="#page-1" class="btn btn-dark">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-3" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- page 3 -->
+  <section id="page-3" class="page">
+    <h1>Ranger Loves Food</h1>
+    <p>Ranger's stomach rules his life; he is always hungry! When we're not looking he likes to try to dig in the trash looking for a snack. His favorite garbage snacks are pizza and Starbucks! Oh and red potatoes!</p>
+    <div>
+      <a href="#page-2" class="btn btn-dark">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+      <a href="#page-4" class="btn">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- page 4 -->
+  <section id="page-4" class="page">
+    <h1>Ranger Loves his Family</h1>
+    <p>Ranger is a loyal and protective dog. He may not be as big as other dogs, but he will put up one heck of a fight if his family is in danger. Don't get between Ranger and the people he loves!</p>
+    <div>
+      <a href="#page-3" class="btn">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script>
+    //smooth scrolling
+    $('.btn').on('click', function(event) {
+      if (this.hash !== '') {
+        event.preventDefault();
+        const hash=this.hash;
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top
+          },
+          400
+        );
+      }
+    });
+  </script>
+
+
+
+</body>
+</html>

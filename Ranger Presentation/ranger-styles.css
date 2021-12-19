@@ -19,20 +19,20 @@ body {
 /* Page Colors */
 #page-1 {  
   background: var(--page-1-color);
-  background: url('img/20211218_135331.jpg') no-repeat center center / cover;
+  background: url('/img/ranger-pics/20211218_135331.jpg') no-repeat center center / cover;
 }
 #page-2 {  
   background: var(--page-2-color);
-  background: url('img/20211030_073218.jpg') no-repeat center
+  background: url('/img/ranger-pics/20211030_073218.jpg') no-repeat center
   center / cover;
 }
 #page-3 {  background: var(--page-3-color);
-  background: url('img/signal-2021-11-03-185316.jpg') no-repeat center
+  background: url('/img/ranger-pics/signal-2021-11-03-185316.jpg') no-repeat center
   center / cover;
   
 }
 #page-4 {  background: var(--page-4-color);
-  background: url('img/20210530_180558.jpg') no-repeat center
+  background: url('/img/ranger-pics/20210530_180558.jpg') no-repeat center
   center / cover;}
 
 .page {
@@ -47,6 +47,7 @@ body {
 }
 
 .page h1  {
+  /* color: red; */
   font-size: 4rem;
   line-height: 1.2;
   margin: 1rem;
